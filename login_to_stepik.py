@@ -6,7 +6,8 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
 
-    time.sleep(3)
+    # TODO: переделать sleep
+    time.sleep(3) # плохая практика
     mail_l = browser.find_element_by_id("id_login_email")
     mail_l.send_keys("x@x.ru")
 
