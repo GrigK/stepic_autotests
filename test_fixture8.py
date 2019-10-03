@@ -12,6 +12,10 @@ Note that everything after the : is an optional description.
 
 Так же можно маркировать целый тестовый класс. В этом случае маркировка
 будет применена ко всем тестовым методам, входящим в класс
+
+Для запуска тестов с разными маркировками можно использовать логическое ИЛИ.
+Запустим smoke и regression-тесты:
+pytest -s -v -m "smoke or regression" test_fixture8.py
 """
 import pytest
 from selenium import webdriver
