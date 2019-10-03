@@ -8,6 +8,7 @@
 pytest -s -v -m "smoke and win10" test_fixture81.py
 
 чтобы пропустить тест, его отмечают в коде как @pytest.mark.skip
+skipif — пропуск запуска по условию
 """
 import pytest
 from selenium import webdriver
