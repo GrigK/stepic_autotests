@@ -6,6 +6,8 @@
 
 Чтобы запустить только smoke-тесты для Windows 10, нужно использовать логическое И:
 pytest -s -v -m "smoke and win10" test_fixture81.py
+
+чтобы пропустить тест, его отмечают в коде как @pytest.mark.skip
 """
 import pytest
 from selenium import webdriver
