@@ -24,7 +24,7 @@ def browser():
     browser.quit()
 
 
-class TestMainPage1():
+class TestMainPage1:
 
     def test_guest_should_see_login_link(self, browser):
         browser.get(link)
